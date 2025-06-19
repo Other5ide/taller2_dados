@@ -19,9 +19,11 @@ public class Jugador {
         return puntos;
     }
 
-    public void tirarDados() {
+    public int tirarDados() {
         System.out.println(nombre +" ha tirado sus dados...");
         juego.jugar();
+
+        return juego.getSumaCaras();
     }
 
     public void incrementarPuntos() {
