@@ -1,7 +1,4 @@
-package Vista;
-
-import Modelo.Dado;
-import Modelo.Calculadora;
+package Modelo;
 
 public class JuegoDeDados {
     private Dado dado1;
