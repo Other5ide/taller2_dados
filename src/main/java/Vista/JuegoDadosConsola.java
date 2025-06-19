@@ -26,14 +26,10 @@ public class JuegoDadosConsola {
      * Muestra las opciones disponibles para el usuario.
      */
     private static void mostrarOpciones() {
-        System.out.println("Consola:");
+        System.out.println("Juego de dados:");
         System.out.println("Selecciona una opcion: ");
-        System.out.println("1. Agregar disco");
+        System.out.println("1. Jugar");
         System.out.println("2. Salir");
-        System.out.println("3. Ver coleccion");
-        System.out.println("4. Buscar disco");
-        System.out.println("5. Ver cantidad de discos agregados");
-        System.out.println("6. Ver espacios disponibles");
     }
 
     /**
@@ -48,10 +44,6 @@ public class JuegoDadosConsola {
                 System.out.println("Saliendo del Sistema...");
                 scanner.close();
             }
-            case "3" -> System.out.println("hola2");
-            case "4" -> System.out.println("hola3");
-            case "5" -> System.out.println("hola4");
-            case "6" -> System.out.println("hola5");
             default -> System.out.println("Opcion invalida");
         }
     }
