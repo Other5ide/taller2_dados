@@ -21,7 +21,7 @@ public class JuegoDadosConsola {
             opcion = scanner.nextLine();
             ejecutarOpcion(opcion);
 
-        } while (!opcion.equals("2"));
+        } while (true);
     }
 
     /**
@@ -42,11 +42,7 @@ public class JuegoDadosConsola {
     private static void ejecutarOpcion(String opcion) {
         switch (opcion) {
             case "1" -> iniciarJuego();
-            case "2" -> {
-                confirmarSalida();
-                System.out.println("Saliendo del Sistema...");
-                scanner.close();
-            }
+            case "2" -> confirmarSalida();
             default -> System.out.println("Opcion invalida");
         }
     }
@@ -57,9 +53,10 @@ public class JuegoDadosConsola {
     }
 
     public static void confirmarSalida(){
-        String usuarioInput = scanner.nextLine();
         System.out.println("¿De verdad quieres salir? (yes/no)");
+        String usuarioInput = scanner.nextLine();
         if (verificarSiSeSale(usuarioInput)) {
+            System.out.println("Saliendo del Sistema...");
             System.exit(0);
         }
     }
