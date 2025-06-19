@@ -43,4 +43,8 @@ class DadoTest {
     void testMenu() {
         JuegoDadosConsola.ejecutarOpcion("1");
     }
+    @Test
+    void mostrarMensajeCorrectoDeResultado(){
+
+    }
 }
