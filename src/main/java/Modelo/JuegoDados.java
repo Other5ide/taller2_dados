@@ -1,6 +1,6 @@
 package Modelo;
 
-public class JuegoDeDados {
+public class JuegoDados {
     private Dado dado1;
     private Dado dado2;
     private Calculadora calculadora;
@@ -9,7 +9,7 @@ public class JuegoDeDados {
      * Inicializa 2 dados y la calculadora.
      * @param calculadora para utilizar sumas.
      */
-    public JuegoDeDados(Calculadora calculadora) {
+    public JuegoDados(Calculadora calculadora) {
         this.dado1 = new Dado();
         this.dado2 = new Dado();
         this.calculadora = calculadora;

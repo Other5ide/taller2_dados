@@ -1,7 +1,7 @@
 package Launcher;
 
 import Modelo.Calculadora;
-import Modelo.JuegoDeDados;
+import Modelo.JuegoDados;
 import Vista.JuegoDadosConsola;
 
 public class Main {
@@ -10,7 +10,7 @@ public class Main {
         System.out.println("Iniciando juego...");
 
         Calculadora calculadora = new Calculadora();
-        JuegoDeDados juegoIndividual = new JuegoDeDados(calculadora);
+        JuegoDados juegoIndividual = new JuegoDados(calculadora);
         JuegoDadosConsola consolaJuego = new JuegoDadosConsola(juegoIndividual);
 
         consolaJuego.iniciar();
