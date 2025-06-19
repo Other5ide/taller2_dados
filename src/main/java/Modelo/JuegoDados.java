@@ -5,7 +5,7 @@ public class JuegoDados {
     private Dado dado2;
 
     /**
-     * Inicializa 2 dados y la calculadora.
+     * Inicializa 2 dados
      */
     public JuegoDados() {
         this.dado1 = new Dado();

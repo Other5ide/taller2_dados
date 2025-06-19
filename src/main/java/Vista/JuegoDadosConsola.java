@@ -43,6 +43,7 @@ public class JuegoDadosConsola {
         switch (opcion) {
             case "1" -> iniciarJuego();
             case "2" -> {
+                confirmarSalida();
                 System.out.println("Saliendo del Sistema...");
                 scanner.close();
             }
@@ -53,5 +54,13 @@ public class JuegoDadosConsola {
     public static void iniciarJuego() {
         JuegoDados juego = new JuegoDados();
         juego.jugar();
+    }
+
+    public static void confirmarSalida(){
+        String usuarioInput = scanner.nextLine();
+        System.out.println("¿De verdad quieres salir? (yes/no)");
+        if (usuarioInput.equalsIgnoreCase("yes")) {
+            System.exit(0);
+        }
     }
 }
