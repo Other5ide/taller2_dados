@@ -3,23 +3,24 @@ package Modelo;
 public class JuegoVersus {
     private Jugador jugador1;
     private Jugador jugador2;
-    private JuegoDados juegoDados;
     private int rondasMaximas;
 
     public JuegoVersus(String nombreJugador1, String nombreJugador2, int rondasMaximas) {
         this.jugador1 = new Jugador(nombreJugador1);
         this.jugador2 = new Jugador(nombreJugador2);
-        this.juegoDados = new JuegoDados();
         this.rondasMaximas = rondasMaximas;
         System.out.println("Modo versus!: " + jugador1.getNombre() + " vs " + jugador2.getNombre() + " al mejor de " + rondasMaximas + " intentos");
     }
 
     public String jugarRonda() {
         System.out.println("\n Turno de " + jugador1.getNombre());
-        boolean ganoJ1 = juegoDados.jugar();
+        int sumaJ1 = jugador1.tirarDados();
 
         System.out.println("\n--- Turno de " + jugador2.getNombre() + " ---");
-        boolean ganoJ2 = juegoDados.jugar();
+        int sumaJ2 = jugador2.tirarDados();
+
+        boolean ganoJ1 = (sumaJ1 == 7);
+        boolean ganoJ2 = (sumaJ2 == 7);
 
         String resultadoRonda;
         if (ganoJ1 && !ganoJ2) {
