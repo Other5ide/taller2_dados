@@ -1,5 +1,6 @@
 package Modelo;
 
+import Vista.JuegoDadosConsola;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -23,5 +24,11 @@ class DadoTest {
         int dado1Cara1 = juego.getDado1().getCaraSuperior();
         int dado2Cara2 = juego.getDado2().getCaraSuperior();
         assertEquals(juego.determinarVictoria(), "");
+    }
+
+    @Test
+    void testConfiracionDeSalida() {
+        JuegoDadosConsola.confirmarSalida();
+
     }
 }

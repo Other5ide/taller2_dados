@@ -59,8 +59,12 @@ public class JuegoDadosConsola {
     public static void confirmarSalida(){
         String usuarioInput = scanner.nextLine();
         System.out.println("¿De verdad quieres salir? (yes/no)");
-        if (usuarioInput.equalsIgnoreCase("yes")) {
+        if (verificarSiSeSale(usuarioInput)) {
             System.exit(0);
         }
+    }
+
+    public static boolean verificarSiSeSale(String respuesta) {
+        return respuesta.equalsIgnoreCase("yes");
     }
 }
