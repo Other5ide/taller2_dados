@@ -24,10 +24,9 @@ public class JuegoDados {
 
         System.out.println("Dado 1: " + dado1.getCaraSuperior() + " | Dado 2: " +  dado2.getCaraSuperior());
         System.out.println("Suma de las caras: " + sumaCaras);
-        determinarVictoria();
     }
 
-    public int calcularResultado(int dado1, int dado2) {
+    private int calcularResultado(int dado1, int dado2) {
         return dado1 + dado2;
     }
 

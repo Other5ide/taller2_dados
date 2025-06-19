@@ -1,6 +1,7 @@
 package Vista;
 
 import Modelo.JuegoDados;
+import Modelo.Jugador;
 
 import java.util.Scanner;
 
@@ -51,7 +52,7 @@ public class JuegoDadosConsola {
     }
 
     public static void iniciarJuego() {
-        JuegoDados juego = new JuegoDados();
-        juego.jugar();
+        Jugador jugador = new Jugador("hola");
+        jugador.tirarDados();
     }
 }
