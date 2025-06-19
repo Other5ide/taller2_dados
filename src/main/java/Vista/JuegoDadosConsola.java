@@ -39,7 +39,7 @@ public class JuegoDadosConsola {
      *
      * @param opcion opción ingresada por el usuario
      */
-    private static void ejecutarOpcion(String opcion) {
+    public static void ejecutarOpcion(String opcion) {
         switch (opcion) {
             case "1" -> iniciarJuego();
             case "2" -> confirmarSalida();
