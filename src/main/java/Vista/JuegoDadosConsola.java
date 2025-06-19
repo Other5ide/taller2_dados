@@ -1,5 +1,7 @@
 package Vista;
 
+import Modelo.JuegoDados;
+
 import java.util.Scanner;
 
 /**
@@ -39,12 +41,17 @@ public class JuegoDadosConsola {
      */
     private static void ejecutarOpcion(String opcion) {
         switch (opcion) {
-            case "1" -> System.out.println("hola1");
+            case "1" -> iniciarJuego();
             case "2" -> {
                 System.out.println("Saliendo del Sistema...");
                 scanner.close();
             }
             default -> System.out.println("Opcion invalida");
         }
+    }
+
+    public static void iniciarJuego() {
+        JuegoDados juego = new JuegoDados();
+        juego.jugar();
     }
 }
