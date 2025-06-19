@@ -36,7 +36,7 @@ public class JuegoDadosConsola {
     }
 
     /**
-     * Ejecuta la opción seleccionada por el usuario.
+     * Ejecuta la opción seleccionada por el usuario..
      *
      * @param opcion opción ingresada por el usuario
      */
