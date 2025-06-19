@@ -1,9 +1,9 @@
 package Launcher;
 
-import Vista.JuegoDadosConsola;
+import Vista.ConsolaJuegoIndividual;
 
 public class Main {
     public static void main(String[] args) {
-        JuegoDadosConsola.menu();
+        ConsolaJuegoIndividual.menu();
     }
 }

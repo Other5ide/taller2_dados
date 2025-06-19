@@ -1,6 +1,5 @@
 package Vista;
 
-import Modelo.JuegoDados;
 import Modelo.Jugador;
 
 import java.util.Scanner;
@@ -8,7 +7,7 @@ import java.util.Scanner;
 /**
  * Clase responsable de interactuar con el usuario por consola.2
  */
-public class JuegoDadosConsola {
+public class ConsolaJuegoIndividual {
     static Scanner scanner = new Scanner(System.in);
 
     /**
